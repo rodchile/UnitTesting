@@ -9,10 +9,18 @@
 #import "UnitTestingViewController.h"
 
 @implementation UnitTestingViewController
-
+@synthesize  label;
 - (void)dealloc
 {
     [super dealloc];
+}
+
+-(IBAction)resetLabel{
+    label.text = @"";
+}
+
+-(IBAction)sayHello{
+    label.text = @"Hello from method";
 }
 
 - (void)didReceiveMemoryWarning
@@ -25,13 +33,12 @@
 
 #pragma mark - View lifecycle
 
-/*
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    label.text = @"Something";
 }
-*/
 
 - (void)viewDidUnload
 {

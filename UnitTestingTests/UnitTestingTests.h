@@ -7,11 +7,15 @@
 //
 
 #import <SenTestingKit/SenTestingKit.h>
+#import "UnitTestingViewController.h"
+#import "UnitTestingAppDelegate.h"
 
 
 @interface UnitTestingTests : SenTestCase {
 @private
-    
+    UnitTestingViewController *viewController;
+    UnitTestingAppDelegate *appDelegate;
+    UIView *appView;
 }
 
 @end

@@ -22,6 +22,10 @@
 		AF4B437E13C3685200BEFC75 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF4B437C13C3685200BEFC75 /* InfoPlist.strings */; };
 		AF4B438113C3685200BEFC75 /* UnitTestingTests.h in Resources */ = {isa = PBXBuildFile; fileRef = AF4B438013C3685200BEFC75 /* UnitTestingTests.h */; };
 		AF4B438313C3685200BEFC75 /* UnitTestingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4B438213C3685200BEFC75 /* UnitTestingTests.m */; };
+		AF963CB013C3B52E000AFC0C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF4B435313C3685200BEFC75 /* UIKit.framework */; };
+		AF963CB113C3B52E000AFC0C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF4B435513C3685200BEFC75 /* Foundation.framework */; };
+		AF963CB213C3B52E000AFC0C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF4B435713C3685200BEFC75 /* CoreGraphics.framework */; };
+		AF963CD113C3CA82000AFC0C /* UserClass.m in Sources */ = {isa = PBXBuildFile; fileRef = AF963CD013C3CA82000AFC0C /* UserClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,22 +43,25 @@
 		AF4B435313C3685200BEFC75 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AF4B435513C3685200BEFC75 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AF4B435713C3685200BEFC75 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		AF4B435B13C3685200BEFC75 /* UnitTesting-Info.plist */ = {isa = PBXFileReference; path = "UnitTesting-Info.plist"; sourceTree = "<group>"; };
+		AF4B435B13C3685200BEFC75 /* UnitTesting-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTesting-Info.plist"; sourceTree = "<group>"; };
 		AF4B435D13C3685200BEFC75 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		AF4B435F13C3685200BEFC75 /* UnitTesting-Prefix.pch */ = {isa = PBXFileReference; path = "UnitTesting-Prefix.pch"; sourceTree = "<group>"; };
+		AF4B435F13C3685200BEFC75 /* UnitTesting-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnitTesting-Prefix.pch"; sourceTree = "<group>"; };
 		AF4B436013C3685200BEFC75 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		AF4B436213C3685200BEFC75 /* UnitTestingAppDelegate.h */ = {isa = PBXFileReference; path = UnitTestingAppDelegate.h; sourceTree = "<group>"; };
+		AF4B436213C3685200BEFC75 /* UnitTestingAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnitTestingAppDelegate.h; sourceTree = "<group>"; };
 		AF4B436313C3685200BEFC75 /* UnitTestingAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnitTestingAppDelegate.m; sourceTree = "<group>"; };
 		AF4B436613C3685200BEFC75 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		AF4B436813C3685200BEFC75 /* UnitTestingViewController.h */ = {isa = PBXFileReference; path = UnitTestingViewController.h; sourceTree = "<group>"; };
+		AF4B436813C3685200BEFC75 /* UnitTestingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnitTestingViewController.h; sourceTree = "<group>"; };
 		AF4B436913C3685200BEFC75 /* UnitTestingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnitTestingViewController.m; sourceTree = "<group>"; };
 		AF4B436C13C3685200BEFC75 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/UnitTestingViewController.xib; sourceTree = "<group>"; };
 		AF4B437313C3685200BEFC75 /* UnitTestingTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTestingTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AF4B437B13C3685200BEFC75 /* UnitTestingTests-Info.plist */ = {isa = PBXFileReference; path = "UnitTestingTests-Info.plist"; sourceTree = "<group>"; };
+		AF4B437B13C3685200BEFC75 /* UnitTestingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTestingTests-Info.plist"; sourceTree = "<group>"; };
 		AF4B437D13C3685200BEFC75 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		AF4B437F13C3685200BEFC75 /* UnitTestingTests-Prefix.pch */ = {isa = PBXFileReference; path = "UnitTestingTests-Prefix.pch"; sourceTree = "<group>"; };
+		AF4B437F13C3685200BEFC75 /* UnitTestingTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnitTestingTests-Prefix.pch"; sourceTree = "<group>"; };
 		AF4B438013C3685200BEFC75 /* UnitTestingTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnitTestingTests.h; sourceTree = "<group>"; };
 		AF4B438213C3685200BEFC75 /* UnitTestingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnitTestingTests.m; sourceTree = "<group>"; };
+		AF963CAF13C3B52E000AFC0C /* ClassTesting.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClassTesting.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF963CCF13C3CA82000AFC0C /* UserClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserClass.h; path = UnitTesting.xcodeproj/UserClass.h; sourceTree = SOURCE_ROOT; };
+		AF963CD013C3CA82000AFC0C /* UserClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserClass.m; path = UnitTesting.xcodeproj/UserClass.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +85,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AF963CAB13C3B52E000AFC0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF963CB013C3B52E000AFC0C /* UIKit.framework in Frameworks */,
+				AF963CB113C3B52E000AFC0C /* Foundation.framework in Frameworks */,
+				AF963CB213C3B52E000AFC0C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -96,6 +113,7 @@
 			children = (
 				AF4B434F13C3685200BEFC75 /* UnitTesting.app */,
 				AF4B437313C3685200BEFC75 /* UnitTestingTests.octest */,
+				AF963CAF13C3B52E000AFC0C /* ClassTesting.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -113,6 +131,8 @@
 		AF4B435913C3685200BEFC75 /* UnitTesting */ = {
 			isa = PBXGroup;
 			children = (
+				AF963CCF13C3CA82000AFC0C /* UserClass.h */,
+				AF963CD013C3CA82000AFC0C /* UserClass.m */,
 				AF4B436213C3685200BEFC75 /* UnitTestingAppDelegate.h */,
 				AF4B436313C3685200BEFC75 /* UnitTestingAppDelegate.m */,
 				AF4B436513C3685200BEFC75 /* MainWindow.xib */,
@@ -194,6 +214,24 @@
 			productReference = AF4B437313C3685200BEFC75 /* UnitTestingTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
+		AF963CAE13C3B52E000AFC0C /* ClassTesting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF963CC013C3B52E000AFC0C /* Build configuration list for PBXNativeTarget "ClassTesting" */;
+			buildPhases = (
+				AF963CAA13C3B52E000AFC0C /* Sources */,
+				AF963CAB13C3B52E000AFC0C /* Frameworks */,
+				AF963CAC13C3B52E000AFC0C /* Resources */,
+				AF963CAD13C3B52E000AFC0C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClassTesting;
+			productName = ClassTesting;
+			productReference = AF963CAF13C3B52E000AFC0C /* ClassTesting.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -216,6 +254,7 @@
 			targets = (
 				AF4B434E13C3685200BEFC75 /* UnitTesting */,
 				AF4B437213C3685200BEFC75 /* UnitTestingTests */,
+				AF963CAE13C3B52E000AFC0C /* ClassTesting */,
 			);
 		};
 /* End PBXProject section */
@@ -240,10 +279,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AF963CAC13C3B52E000AFC0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		AF4B437113C3685200BEFC75 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		AF963CAD13C3B52E000AFC0C /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -266,6 +325,7 @@
 				AF4B436113C3685200BEFC75 /* main.m in Sources */,
 				AF4B436413C3685200BEFC75 /* UnitTestingAppDelegate.m in Sources */,
 				AF4B436A13C3685200BEFC75 /* UnitTestingViewController.m in Sources */,
+				AF963CD113C3CA82000AFC0C /* UserClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +334,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF4B438313C3685200BEFC75 /* UnitTestingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF963CAA13C3B52E000AFC0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +494,46 @@
 			};
 			name = Release;
 		};
+		AF963CBE13C3B52E000AFC0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ClassTesting/ClassTesting-Prefix.pch";
+				INFOPLIST_FILE = "ClassTesting/ClassTesting-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		AF963CBF13C3B52E000AFC0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ClassTesting/ClassTesting-Prefix.pch";
+				INFOPLIST_FILE = "ClassTesting/ClassTesting-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -446,6 +553,7 @@
 				AF4B438813C3685200BEFC75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AF4B438913C3685200BEFC75 /* Build configuration list for PBXNativeTarget "UnitTestingTests" */ = {
 			isa = XCConfigurationList;
@@ -454,6 +562,16 @@
 				AF4B438B13C3685200BEFC75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF963CC013C3B52E000AFC0C /* Build configuration list for PBXNativeTarget "ClassTesting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF963CBE13C3B52E000AFC0C /* Debug */,
+				AF963CBF13C3B52E000AFC0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

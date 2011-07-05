@@ -7,15 +7,16 @@
 //
 
 #import "UnitTestingTests.h"
-
+#import "UserClass.h"
 
 @implementation UnitTestingTests
 
 - (void)setUp
 {
     [super setUp];
-    
-    // Set-up code here.
+    appDelegate = [[UIApplication sharedApplication] delegate];
+    viewController = [appDelegate viewController];
+    appView = [viewController view];
 }
 
 - (void)tearDown
@@ -25,9 +26,27 @@
     [super tearDown];
 }
 
-- (void)testExample
+-(void)testAppDelegate{
+    STAssertNotNil(appDelegate, @"APPDelegate is nil");
+}
+
+-(void)testResetButton{
+    [viewController resetLabel];
+    NSString *labelText = [(UILabel *)[appView viewWithTag:2] text];
+    STAssertEqualObjects(@"",labelText,@"Reset Functionality is not working");
+}
+
+-(void)testSayHelloButton{
+    [viewController sayHello];
+    NSString *labelText = [(UILabel *)[appView viewWithTag:2] text];
+    STAssertEqualObjects(@"Hello from method",labelText,@"Say Hello Functionality is not working");
+}
+
+- (void)testClass
 {
-    STFail(@"Unit tests are not implemented yet in UnitTestingTests");
+    UserClass *testUser = [[UserClass alloc] init];
+    [testUser setUserMessage:@"testUser"];
+    STAssertEqualObjects(@"testUser",[testUser userMessage], @"Test Fail");
 }
 
 @end

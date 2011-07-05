@@ -9,7 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface UnitTestingViewController : UIViewController {
-    
+    IBOutlet UILabel *label;
 }
+
+@property(nonatomic,retain) IBOutlet UILabel *label;
+
+-(IBAction)resetLabel;
+-(IBAction)sayHello;
 
 @end
